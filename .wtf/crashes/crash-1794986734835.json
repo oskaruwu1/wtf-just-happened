@@ -1,0 +1,27 @@
+{
+  "id": "crash-1794986734835",
+  "savedAt": "2026-11-18T07:25:34.835Z",
+  "context": {
+    "command": "npm --prefix playground run fail:port",
+    "exitCode": 1,
+    "durationMs": 2597,
+    "timestamp": "2026-11-18T07:25:34.604Z",
+    "system": {
+      "platform": "win32",
+      "osRelease": "10.0.26200",
+      "arch": "x64",
+      "nodeVersion": "v24.19.0",
+      "cwd": "C:\\Users\\oskar\\Desktop\\wtf-just-happened",
+      "totalMemoryMB": 32646,
+      "freeMemoryMB": 18876,
+      "cpuCount": 8
+    },
+    "activePorts": [],
+    "environment": {
+      "PATH": "C:/Users/oskar/.gemini/antigravity/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\PuTTY\\;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\oskar\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Zed\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\Users\\oskar\\AppData\\Roaming\\npm;C:\\Users\\oskar\\AppData\\Local\\Programs\\MovieBox-Tui\\bin;C:\\Users\\oskar\\AppData\\Local\\PowerToys\\DSCModules\\;C:\\Users\\oskar\\.dotnet\\tools;C:\\LUA;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;"
+    },
+    "rawOutputTail": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H\u001b]0;npm\u0007\u001b[?25h\u001b]0;npm run fail:port\u0007\\\u001b[?25l\u001b[1m\u001b[Hnpm\u001b[22m \u001b[96mnotice \u001b[94mrun \u001b[mplayground-broken-app@1.0.0 fail:port\u001b[K\u001b[1m\r\nnpm\u001b[22m \u001b[96mnotice \u001b[94mrun \u001b[mnode port-conflict.js\u001b[K\r\n\u001b[K\u001b[?25hStarting primary server on port 3000...\r\nServer 1 successfully listening on http://localhost:3000\r\nAttempting to bind a second server on duplicate port 3000...\r\n\r\n💥 Fatal Server Collision Error:\r\n Error: listen EADDRINUSE: address already in use :::3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2167:16)\r\n    at listenInCluster (node:net:2224:12)\r\n    at Server.listen (node:net:2344:7)\r\n    at Server.<anonymous> (file:///C:/Users/oskar/Desktop/wtf-just-happened/playground/port-conflict.js:24:11)\r\n    at Object.onceWrapper (node:events:630:28)\r\n    at Server.emit (node:events:521:24)\r\n    at emitListeningNT (node:net:2210:10)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)\r\nPort 3000 is already allocated by another process!\r\n\\\r\u001b[K",
+    "cleanOutputTail": "\\npm notice run playground-broken-app@1.0.0 fail:port\r\nnpm notice run node port-conflict.js\r\nStarting primary server on port 3000...\r\nServer 1 successfully listening on http://localhost:3000\r\nAttempting to bind a second server on duplicate port 3000...\r\n\r\n💥 Fatal Server Collision Error:\r\n Error: listen EADDRINUSE: address already in use :::3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2167:16)\r\n    at listenInCluster (node:net:2224:12)\r\n    at Server.listen (node:net:2344:7)\r\n    at Server.<anonymous> (file:///C:/Users/oskar/Desktop/wtf-just-happened/playground/port-conflict.js:24:11)\r\n    at Object.onceWrapper (node:events:630:28)\r\n    at Server.emit (node:events:521:24)\r\n    at emitListeningNT (node:net:2210:10)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)\r\nPort 3000 is already allocated by another process!\r\n\\\r"
+  },
+  "redactedOutput": "\\npm notice run playground-broken-app@1.0.0 fail:port\r\nnpm notice run node port-conflict.js\r\nStarting primary server on port 3000...\r\nServer 1 successfully listening on http://localhost:3000\r\nAttempting to bind a second server on duplicate port 3000...\r\n\r\n💥 Fatal Server Collision Error:\r\n Error: listen EADDRINUSE: address already in use :::3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2167:16)\r\n    at listenInCluster (node:net:2224:12)\r\n    at Server.listen (node:net:2344:7)\r\n    at Server.<anonymous> (file:///C:/Users/oskar/Desktop/wtf-just-happened/playground/port-conflict.js:24:11)\r\n    at Object.onceWrapper (node:events:630:28)\r\n    at Server.emit (node:events:521:24)\r\n    at emitListeningNT (node:net:2210:10)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)\r\nPort 3000 is already allocated by another process!\r\n\\\r"
+}

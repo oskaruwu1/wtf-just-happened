@@ -1,0 +1,10 @@
+{
+  "name": "playground-broken-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fail:build": "node broken-build.js",
+    "fail:port": "node port-conflict.js"
+  }
+}

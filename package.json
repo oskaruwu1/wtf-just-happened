@@ -1,0 +1,53 @@
+{
+  "name": "wtf-just-happened",
+  "version": "1.0.0",
+  "description": "Transparent PTY crash capture & diagnostic report CLI",
+  "type": "module",
+  "bin": {
+    "wtf": "./dist/cli.js",
+    "wtf-just-happened": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "try:playground": "node dist/cli.js npm --prefix playground run fail:build",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "keywords": [
+    "cli",
+    "pty",
+    "crash-reporter",
+    "diagnostics",
+    "developer-tools"
+  ],
+  "author": "Oskar Labuda",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oskaruwu1/wtf-just-happened.git"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "clipboardy": "^4.0.0",
+    "picocolors": "^1.1.1",
+    "strip-ansi": "^7.1.0"
+  },
+  "optionalDependencies": {
+    "node-pty": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

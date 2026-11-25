@@ -1,0 +1,27 @@
+{
+  "id": "crash-1794986743338",
+  "savedAt": "2026-11-18T07:25:43.338Z",
+  "context": {
+    "command": "fake-build --prod",
+    "exitCode": 1,
+    "durationMs": 1420,
+    "timestamp": "2026-11-18T07:25:43.217Z",
+    "system": {
+      "platform": "win32",
+      "osRelease": "10.0.26200",
+      "arch": "x64",
+      "nodeVersion": "v24.19.0",
+      "cwd": "C:\\Users\\oskar\\Desktop\\wtf-just-happened",
+      "totalMemoryMB": 32646,
+      "freeMemoryMB": 18880,
+      "cpuCount": 8
+    },
+    "activePorts": [],
+    "environment": {
+      "PATH": "C:/Users/oskar/.gemini/antigravity/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\PuTTY\\;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\oskar\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Zed\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\Users\\oskar\\AppData\\Roaming\\npm;C:\\Users\\oskar\\AppData\\Local\\Programs\\MovieBox-Tui\\bin;C:\\Users\\oskar\\AppData\\Local\\PowerToys\\DSCModules\\;C:\\Users\\oskar\\.dotnet\\tools;C:\\LUA;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;"
+    },
+    "rawOutputTail": "[INFO] Starting build for @acme/api-service...\n[INFO] Loading configuration from .env.production\n[DEBUG] Connecting to postgres://admin:supersecret123@localhost:5432/prod\n[DEBUG] Initializing AWS S3 with key AKIAIOSFODNN7EXAMPLE\n[ERROR] 💥 Build error: Unhandled exception in src/server.ts:42:15\nError: Database connection refused at 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1605:16)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n[FATAL] Command exited with code 1",
+    "cleanOutputTail": "[INFO] Starting build for @acme/api-service...\n[INFO] Loading configuration from .env.production\n[DEBUG] Connecting to postgres://admin:supersecret123@localhost:5432/prod\n[DEBUG] Initializing AWS S3 with key AKIAIOSFODNN7EXAMPLE\n[ERROR] 💥 Build error: Unhandled exception in src/server.ts:42:15\nError: Database connection refused at 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1605:16)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n[FATAL] Command exited with code 1"
+  },
+  "redactedOutput": "[INFO] Starting build for @acme/api-service...\n[INFO] Loading configuration from .env.production\n[DEBUG] Connecting to postgres://admin:[REDACTED]@localhost:5432/prod\n[DEBUG] Initializing AWS S3 with key [REDACTED_AWS_KEY]\n[ERROR] 💥 Build error: Unhandled exception in src/server.ts:42:15\nError: Database connection refused at 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1605:16)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n[FATAL] Command exited with code 1"
+}

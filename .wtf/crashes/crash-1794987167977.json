@@ -1,0 +1,28 @@
+{
+  "id": "crash-1794987167977",
+  "savedAt": "2026-11-18T07:32:47.977Z",
+  "context": {
+    "command": "node -e throw new Error('Boom')",
+    "exitCode": 1,
+    "durationMs": 114,
+    "timestamp": "2026-11-18T07:32:47.875Z",
+    "system": {
+      "platform": "win32",
+      "osRelease": "10.0.26200",
+      "arch": "x64",
+      "nodeVersion": "v24.19.0",
+      "cwd": "C:\\Users\\oskar\\Desktop\\wtf-just-happened",
+      "totalMemoryMB": 32646,
+      "freeMemoryMB": 18550,
+      "cpuCount": 8
+    },
+    "activePorts": [],
+    "environment": {
+      "NODE_ENV": "test",
+      "PATH": "C:\\Users\\oskar\\Desktop\\wtf-just-happened\\node_modules\\.bin;C:\\Users\\oskar\\Desktop\\node_modules\\.bin;C:\\Users\\oskar\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\Users\\oskar\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:/Users/oskar/.gemini/antigravity/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\PuTTY\\;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\oskar\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Zed\\bin;C:\\Users\\oskar\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\Users\\oskar\\AppData\\Roaming\\npm;C:\\Users\\oskar\\AppData\\Local\\Programs\\MovieBox-Tui\\bin;C:\\Users\\oskar\\AppData\\Local\\PowerToys\\DSCModules\\;C:\\Users\\oskar\\.dotnet\\tools;C:\\LUA;C:\\Users\\oskar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;"
+    },
+    "rawOutputTail": "[eval]:1\r\nthrow new Error('Boom')\r\n^\r\n\r\nError: Boom\r\n    at [eval]:1:7\r\n    at runScriptInThisContext (node:internal/vm:219:10)\r\n    at node:internal/process/execution:451:12\r\n    at [eval]-wrapper:6:24\r\n    at runScriptInContext (node:internal/process/execution:449:60)\r\n    at evalFunction (node:internal/process/execution:283:30)\r\n    at evalTypeScript (node:internal/process/execution:295:3)\r\n    at node:internal/main/eval_string:71:3\r\n\r\nNode.js v24.19.0\r\n",
+    "cleanOutputTail": "[eval]:1\r\nthrow new Error('Boom')\r\n^\r\n\r\nError: Boom\r\n    at [eval]:1:7\r\n    at runScriptInThisContext (node:internal/vm:219:10)\r\n    at node:internal/process/execution:451:12\r\n    at [eval]-wrapper:6:24\r\n    at runScriptInContext (node:internal/process/execution:449:60)\r\n    at evalFunction (node:internal/process/execution:283:30)\r\n    at evalTypeScript (node:internal/process/execution:295:3)\r\n    at node:internal/main/eval_string:71:3\r\n\r\nNode.js v24.19.0\r\n"
+  },
+  "redactedOutput": "[eval]:1\r\nthrow new Error('Boom')\r\n^\r\n\r\nError: Boom\r\n    at [eval]:1:7\r\n    at runScriptInThisContext (node:internal/vm:219:10)\r\n    at node:internal/process/execution:451:12\r\n    at [eval]-wrapper:6:24\r\n    at runScriptInContext (node:internal/process/execution:449:60)\r\n    at evalFunction (node:internal/process/execution:283:30)\r\n    at evalTypeScript (node:internal/process/execution:295:3)\r\n    at node:internal/main/eval_string:71:3\r\n\r\nNode.js v24.19.0\r\n"
+}
